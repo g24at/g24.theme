@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+ <layer
+     name="g24.theme"
+     interface="g24.theme.interfaces.IG24Theme"
+     />
+ </layer>
+</layers>

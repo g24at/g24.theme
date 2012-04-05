@@ -3,6 +3,12 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="g24.theme">
 
+  <interface
+      interface=".interfaces.IG24Theme"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="G24Skin"
+      />
+
   <genericsetup:registerProfile
         name="default"
         title="g24.theme: default"
