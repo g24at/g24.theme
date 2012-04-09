@@ -22,16 +22,15 @@
          tal:omit-tag="python:view.author() is None"
          i18n:name="author">Roland Barthes</a>
       </tal:i18n>
-         —
     </span>
   </tal:name>
   </tal:creator>
 
-  <span class="documentModified">
-    <span i18n:translate="box_last_modified">
-      last modified
+  <span class="documentCreated">
+    <span i18n:translate="box_created_on">
+      on
     </span>
-    <span tal:replace="python:view.toLocalizedTime(context.ModificationDate(),long_format=1)">
+    <span tal:replace="python:view.toLocalizedTime(context.CreationDate(),long_format=0)">
       August 16, 2001 at 23:35:59
     </span>
   </span>
