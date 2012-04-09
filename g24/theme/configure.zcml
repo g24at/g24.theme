@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="g24.theme">
 
   <interface
@@ -8,6 +9,10 @@
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="G24Skin"
       />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+    directory="templates"/>
 
   <genericsetup:registerProfile
         name="default"

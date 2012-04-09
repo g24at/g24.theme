@@ -23,6 +23,6 @@ setup(name='g24.theme',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'z3c.jbot',
       ],
 )
