@@ -3,4 +3,12 @@
   <order manager="plone.contentviews" skinname="G24Skin">
     <viewlet name="g24.elements.sharingbox" />
   </order>
+
+  <hidden manager="plone.portalfooter" skinname="G24Skin">
+    <viewlet name="plone.footer"/>
+    <viewlet name="plone.colophon"/>
+    <viewlet name="plone.site_actions"/>
+    <viewlet name="plone.analytics"/>
+  </hidden> 
+
 </object>
