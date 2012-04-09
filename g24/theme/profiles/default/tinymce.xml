@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<object>
+ <resourcetypes>
+  <linkable purge="False">
+   <element value="g24.elements.basetype"/>
+  </linkable>
+  <containsanchors purge="False">
+   <element value="g24.elements.basetype"/>
+  </containsanchors>
+  <containsobjects purge="False">
+   <element value="g24.elements.basetype"/>
+  </containsobjects>
+  <link_using_uids value="True"/>
+ </resourcetypes>
+ <layout>
+  <autoresize value="True"/>
+ </layout>
+ <toolbar>
+  <toolbar_anchor value="False"/>
+  <toolbar_hr value="False"/>
+  <toolbar_insertdate value="False"/>
+  <toolbar_cut value="False"/>
+  <toolbar_definitionlist value="False"/>
+  <customtoolbarbuttons value=""/>
+  <toolbar_paste value="False"/>
+  <toolbar_justifycenter value="False"/>
+  <toolbar_inserttime value="False"/>
+  <toolbar_tablecontrols value="False"/>
+  <toolbar_justifyleft value="False"/>
+  <toolbar_redo value="False"/>
+  <toolbar_unlink value="False"/>
+  <toolbar_visualchars value="False"/>
+  <toolbar_media value="False"/>
+  <toolbar_nonbreaking value="False"/>
+  <toolbar_image value="False"/>
+  <toolbar_advhr value="False"/>
+  <toolbar_removeformat value="False"/>
+  <toolbar_undo value="False"/>
+  <toolbar_save value="False"/>
+  <toolbar_sub value="False"/>
+  <toolbar_numlist value="False"/>
+  <toolbar_underline value="False"/>
+  <toolbar_sup value="False"/>
+  <toolbar_preview value="False"/>
+  <toolbar_forecolor value="False"/>
+  <toolbar_code value="False"/>
+  <toolbar_style value="False"/>
+  <toolbar_link value="False"/>
+  <toolbar_emotions value="False"/>
+  <toolbar_justifyright value="False"/>
+  <toolbar_replace value="False"/>
+  <toolbar_outdent value="False"/>
+  <toolbar_strikethrough value="False"/>
+  <toolbar_pasteword value="False"/>
+  <toolbar_width value="440"/>
+  <toolbar_print value="False"/>
+  <toolbar_spellchecker value="False"/>
+  <toolbar_justifyfull value="False"/>
+  <toolbar_charmap value="False"/>
+  <toolbar_bullist value="False"/>
+  <toolbar_copy value="False"/>
+  <toolbar_pastetext value="False"/>
+  <toolbar_visualaid value="False"/>
+  <toolbar_indent value="False"/>
+  <toolbar_search value="False"/>
+  <toolbar_fullscreen value="False"/>
+  <toolbar_italic value="True"/>
+  <toolbar_attribs value="False"/>
+  <toolbar_pagebreak value="False"/>
+  <toolbar_bold value="True"/>
+  <toolbar_backcolor value="False"/>
+  <toolbar_external value="False"/>
+  <toolbar_cleanup value="False"/>
+ </toolbar>
+</object>
