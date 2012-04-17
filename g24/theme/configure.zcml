@@ -11,15 +11,43 @@
       />
 
   <include package="z3c.jbot" file="meta.zcml" />
-  <browser:jbot
-    directory="templates"/>
+  <browser:jbot directory="templates"/>
 
   <genericsetup:registerProfile
-        name="default"
-        title="g24.theme: default"
-        directory="profiles/default"
-        description="g24 theme default profile."
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        />
+      name="default"
+      title="g24.theme: default"
+      directory="profiles/default"
+      description="g24 theme default profile."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <include package="plone.app.layout.viewlets" />
+  <!-- only show edit bar for admins -->
+  <browser:viewlet
+      name="plone.contentviews"
+      for="g24.elements.content.IBasetype"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class="plone.app.layout.viewlets.common.ContentViewsViewlet"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IG24Theme"
+      />
+  <browser:viewlet
+      name="plone.contentactions"
+      for="g24.elements.content.IBasetype"
+      view="plone.app.layout.globals.interfaces.IViewView"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IG24Theme"
+      />
+  <browser:viewlet
+      name="plone.contentactions"
+      for="g24.elements.content.IBasetype"
+      view="plone.app.content.browser.interfaces.IFolderContentsView"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IG24Theme"
+      />
 
 </configure>
