@@ -24,5 +24,7 @@ setup(name='g24.theme',
       install_requires=[
           'setuptools',
           'z3c.jbot',
+          'plone.app.theming',
+          'plone.resource',
       ],
 )

@@ -4,22 +4,22 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="g24.theme">
 
+  <include package="plone.app.theming" />
+  <include package="plone.resource" file="meta.zcml"/>
+  <include package="z3c.jbot" file="meta.zcml" />
+
   <interface
       interface=".interfaces.IG24Theme"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="G24Skin"
       />
 
-  <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot directory="templates"/>
 
-  <genericsetup:registerProfile
-      name="default"
-      title="g24.theme: default"
-      directory="profiles/default"
-      description="g24 theme default profile."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+  <plone:static
+    directory="theme"
+    type="theme"
+    name="g24new-theme" />
 
   <include package="plone.app.layout.viewlets" />
   <!-- only show edit bar for admins -->
@@ -48,6 +48,14 @@
       class="plone.app.layout.viewlets.common.ContentActionsViewlet"
       permission="cmf.ManagePortal"
       layer=".interfaces.IG24Theme"
+      />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="g24.theme: default"
+      directory="profiles/default"
+      description="g24 theme default profile."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
 </configure>
