@@ -1,0 +1,8 @@
+/*Interne Style f. Multisite g24_community*/
+.blockIn_S_Title, .blockIn_M_Title, .blockIn_L_Title, .blockIn_XL_Title, .modultitle {
+	background:#DFFF7F; border-color:#DFFF7F; 
+}
+
+.blockIn_S_Content, .blockIn_S_ContentFix, .blockIn_M_Content, .blockIn_M_ContentFix, .blockIn_L_Content, .blockIn_L_ContentFix, .blockIn_XL_Content, .blockIn_XL_ContentFix, .modulcontent {
+	border-color:#DFFF7F;
+}
