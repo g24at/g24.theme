@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
   <javascript
-      id="++theme++g24new-basetheme/g24new/js/scripts.js"
+      id="++theme++g24new-theme/g24new/js/scripts.js"
       cacheable="True" compression="safe" cookable="True" inline="False"
       enabled="True" expression="request/HTTP_X_THEME_ENABLED|nothing"
       />
