@@ -12,31 +12,54 @@
 
   <!-- HEAD -->
   <copy attributes="*" theme="/html" content="/html"/>
-  <replace theme="/html/head" content="/html/head"/>
-  <replace content="/html/head/meta[@name='viewport']">
-    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"/>
-  </replace>
+  <!--replace theme="/html/head" content="/html/head"/-->
 
-  <replace content="/html/head/link[@rel='shortcut icon']">
+  <!-- replace content="/html/head/meta[@name='viewport']">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"/>
+  </replace-->
+
+  <!--replace content="/html/head/link[@rel='shortcut icon']">
     <link rel="icon" href="++theme++g24new-theme/g24new/icons/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="++theme++g24new-theme/g24new/icons/favicon.png" type="image/png"/>
-  </replace>
-  <replace content="/html/head/link[@rel='apple-touch-icon']">
+  </replace-->
+  <!--replace content="/html/head/link[@rel='apple-touch-icon']">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="++theme++g24new-theme/g24new/icons/apple-touch-icon-114x114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="++theme++g24new-theme/g24new/icons/apple-touch-icon-72x72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="++theme++g24new-theme/g24new/icons/apple-touch-icon-precomposed.png"/>
-  </replace>
+  </replace-->
 
 
   <!-- BODY -->
-  <copy attributes="class dir" theme="/html/body" content="/html/body"/>
-  <replace theme-children="/html/body" content-children="/html/body"/>
+  <copy attributes="class dir" theme="/html/body" content="/html/body" />
+  <!--replace theme-children="/html/body" content-children="/html/body"/-->
+  <replace css:content-children="#content-core" css:theme-children="div.container-fluid div.span9" />
+
+  <rules css:if-content="#user-name">
+    <copy attributes="href"
+      css:content-children="a#user-name"
+      css:theme-children="a#user-name" />
+    <replace
+      css:content-children="a#user-name"
+      css:theme-children="a#user-name .username" />
+    <replace
+      css:content-children="#portal-personaltools-wrapper .actionMenuContent ul"
+      css:theme-children="#g24-usermenu ul.dropdown-menu" />
+  </rules>
+  <rules css:if-content="#personaltools-login">
+    <replace
+      css:content-children="a#personaltools-login"
+      css:theme-children="a#user-name" />
+    <drop 
+      css:theme-children="#g24-usermenu ul.dropdown-menu" />
+    <!-- http://127.0.0.1:8080/Plone/login?ajax_load=1 -->
+  </rules>
+
 
   <!-- debugtoolbar -->
-  <!--after css:theme-children="body"
+  <after css:theme-children="body"
          css:content="#debug-toolbar-trigger"/>
   <after css:theme-children="body"
-         css:content="#debug-toolbar"/-->
+         css:content="#debug-toolbar"/>
 
 </rules>
 </rules>
