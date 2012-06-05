@@ -49,17 +49,18 @@
     <replace
       css:content-children="a#personaltools-login"
       css:theme-children="a#user-name" />
-    <drop 
+    <replace
+      href="/login?ajax_load=1" method="document"
+      css:content-children="#content-core"
       css:theme-children="#g24-usermenu ul.dropdown-menu" />
-    <!-- http://127.0.0.1:8080/Plone/login?ajax_load=1 -->
   </rules>
 
 
   <!-- debugtoolbar -->
-  <after css:theme-children="body"
+  <!-- after css:theme-children="body"
          css:content="#debug-toolbar-trigger"/>
   <after css:theme-children="body"
-         css:content="#debug-toolbar"/>
+         css:content="#debug-toolbar"/-->
 
 </rules>
 </rules>
