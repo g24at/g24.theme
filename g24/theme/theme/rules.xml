@@ -46,7 +46,6 @@
     css:content="#portal-searchbox"
     css:theme-children="#g24-searchbox" />
 
-
   <replace
     css:content-children="ul#portal-globalnav"
     css:theme-children="#g24-menu ul.nav" />
