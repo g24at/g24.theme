@@ -83,7 +83,7 @@
       css:content-children="#online-users"
       css:theme-children="#online-users" />
   </rules>
-  <rules css:if-content="not#toggle-online-users">
+  <rules css:if-not-content="#toggle-online-users">
     <drop css:theme="#g24-online-users" />
   </rules>
 
