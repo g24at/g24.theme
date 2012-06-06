@@ -9,8 +9,8 @@
       media="screen" rel="stylesheet" rendering="import"
       />
   
-  <stylesheet bundle="default g24" id="invisibles.css" />
-  <stylesheet bundle="default g24" id="++resource++plone.app.event/event.css" />
-  <stylesheet bundle="default g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.css" />
+  <stylesheet bundle="g24" id="invisibles.css" />
+  <stylesheet bundle="g24" id="++resource++plone.app.event/event.css" />
+  <stylesheet bundle="g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.css" />
 
 </object> 

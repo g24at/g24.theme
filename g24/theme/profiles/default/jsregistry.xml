@@ -7,8 +7,8 @@
       cacheable="True" compression="safe" cookable="True" inline="False"
       enabled="True" expression="request/HTTP_X_THEME_ENABLED|nothing" />
 
-  <javascript bundle="default g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.js" />
-  <javascript bundle="default g24" id="livesearch.js" />
-  <javascript bundle="default g24" id="jquery.highlightsearchterms.js" />
+  <javascript bundle="g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.js" />
+  <javascript bundle="g24" id="livesearch.js" />
+  <javascript bundle="g24" id="jquery.highlightsearchterms.js" />
 
 </object>
