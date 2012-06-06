@@ -12,6 +12,12 @@
 
   <!-- HEAD -->
   <copy attributes="*" theme="/html" content="/html"/>
+
+  <drop css:theme="link.dropme" />
+  <drop css:theme="script.dropme" />
+  <after theme-children="/html/head" css:content="html head link[type='text/css']" />
+  <after theme-children="/html/body" content="/html/head/script" />
+
   <!--replace theme="/html/head" content="/html/head"/-->
 
   <!-- replace content="/html/head/meta[@name='viewport']">

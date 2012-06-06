@@ -8,6 +8,7 @@
                 <element>jquerytools</element>
                 <element>xmpp</element>
                 <element>g24</element>
+                <element>g24only</element>
             </element>
         </value>
     </record>

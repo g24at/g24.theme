@@ -1,6 +1,9 @@
+/* BOOTSTRAP BASIC */
+body { padding-top: 60px; padding-bottom: 40px; }
+.sidebar-nav { padding: 9px 0; }
+
 /* PLONE BASIC */
 .hiddenStructure { display:none; }
-
 
 /* G24 STYLES */
 #g24-logo a { display:block; /* logo dimensions should grow/shrink with svg embed */ }

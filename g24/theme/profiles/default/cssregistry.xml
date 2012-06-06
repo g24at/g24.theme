@@ -1,15 +1,26 @@
 <?xml version="1.0"?>
 <object name="portal_css" meta_type="Stylesheets Registry">
 
-  <stylesheet
-      bundle="g24" 
-      id="++theme++g24new-theme/g24new/css/styles.css"
-      cacheable="True" compression="safe" cookable="True" enabled="True"
-      expression="request/HTTP_X_THEME_ENABLED|nothing"
-      media="screen" rel="stylesheet" rendering="import"
-      />
-  
   <stylesheet bundle="g24" id="++resource++plone.app.event/event.css" />
   <stylesheet bundle="g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.css" />
+
+  <stylesheet
+      bundle="g24only" 
+      id="++theme++g24new-theme/bootstrap/docs/assets/css/bootstrap.css"
+      cacheable="True" compression="safe" cookable="True" enabled="True"
+      media="screen" rel="stylesheet" rendering="link"
+      />
+  <stylesheet
+      bundle="g24only" 
+      id="++theme++g24new-theme/bootstrap/docs/assets/css/bootstrap-responsive.css"
+      cacheable="True" compression="safe" cookable="True" enabled="True"
+      media="screen" rel="stylesheet" rendering="link"
+      />
+  <stylesheet
+      bundle="g24only" 
+      id="++theme++g24new-theme/g24new/css/styles.css"
+      cacheable="True" compression="safe" cookable="True" enabled="True"
+      media="screen" rel="stylesheet" rendering="link"
+      />
 
 </object> 
