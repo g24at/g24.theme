@@ -1,1 +1,10 @@
-#g24-logo object { width:100%; }
+/* PLONE BASIC */
+.hiddenStructure { display:none; }
+
+
+/* G24 STYLES */
+#g24-logo a { display:block; /* logo dimensions should grow/shrink with svg embed */ }
+
+#g24-searchbox form, #g24-searchbox input { margin:0; } 
+#g24-searchbox .searchButton { display:none; }
+#g24-searchbox .searchSection label { display:inline; }
