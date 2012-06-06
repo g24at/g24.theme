@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skin-path name="G24Skin" based-on="Plone Default" />
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="g24_skin_theme"
+        request_varname="plone_skin">
+
+  <object name="g24_skin_path"
+          meta_type="Filesystem Directory View"
+          directory="g24.theme:skins" /> 
+
+  <skin-path name="g24_skin_theme" based-on="Sunburst Theme">
+    <layer name="g24_skin_path"
+           insert-after="custom" />
+  </skin-path>
+
+</object>
