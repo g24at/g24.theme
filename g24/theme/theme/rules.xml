@@ -34,6 +34,11 @@
   <!--replace theme-children="/html/body" content-children="/html/body"/-->
   <replace css:content-children="#content-core" css:theme-children="div.container-fluid div.span9" />
 
+  
+  <replace
+    css:content-children="ul#portal-globalnav"
+    css:theme-children="#g24-menu ul.nav" />
+
   <rules css:if-content="#user-name">
     <copy attributes="href"
       css:content-children="a#user-name"
