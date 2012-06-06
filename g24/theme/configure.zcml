@@ -10,6 +10,12 @@
   <include package="plone.resource" file="meta.zcml"/>
   <include package="z3c.jbot" file="meta.zcml" />
 
+  <!-- TODO: does not work. -->
+  <!-- subscriber
+      for="plone.app.layout.navigation.interfaces.INavigationRoot
+      zope.app.publication.interfaces.IBeforeTraverseEvent"
+      handler=".skinswitcher.set_skin" /-->
+
   <interface
       interface=".interfaces.IG24Theme"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
