@@ -47,9 +47,8 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#">g24.at</a>
-          <div class="btn-group pull-right">
-
-            <div id="g24-usermenu">
+          
+          <div id="g24-usermenu" class="btn-group pull-right">
               <a id="user-name" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="icon-user"></i> <span class="username">Username</span>
                 <span class="caret"></span>
@@ -59,9 +58,21 @@
                 <li class="divider"></li>
                 <li><a href="#">Sign Out</a></li>
               </ul>
-            </div>
-
           </div>
+
+          <div id="g24-online-users" class="btn-group pull-right">
+            <a id="toggle-online-users" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <span>People online:</span>
+              <span id="online-count">3</span>
+            </a>
+            <ul id="online-users" class="dropdown-menu">
+              <li><a href="#">Hauns</a></li>
+              <li><a href="#">Fraunz</a></li>
+              <li><a href="#">Sepp</a></li>
+            </ul>
+          </div>
+
+
           <div id="g24-menu" class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>

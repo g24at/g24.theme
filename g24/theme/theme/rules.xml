@@ -60,6 +60,20 @@
       css:theme-children="#g24-usermenu ul.dropdown-menu" />
   </rules>
 
+  <rules css:if-content="#toggle-online-users">
+    <copy attributes="href"
+      css:content-children="a#toggle-online-users"
+      css:theme-children="a#toggle-online-users" />
+    <replace
+      css:content-children="#toggle-online-users"
+      css:theme-children="#toggle-online-users" />
+    <replace
+      css:content-children="#online-users"
+      css:theme-children="#online-users" />
+  </rules>
+  <rules css:if-content="not#toggle-online-users">
+    <drop css:theme="#g24-online-users" />
+  </rules>
 
   <!-- debugtoolbar -->
   <!-- after css:theme-children="body"
