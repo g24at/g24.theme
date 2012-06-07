@@ -38,7 +38,14 @@
   <!-- BODY -->
   <copy attributes="class dir" theme="/html/body" content="/html/body" />
   <!--replace theme-children="/html/body" content-children="/html/body"/-->
-  <replace css:content-children="#content-core" css:theme-children="div.container-fluid div.span9" />
+  <replace
+    css:if-content="#content-core"
+    css:content-children="#content-core"
+    css:theme-children="div.container-fluid div.span9" />
+  <replace
+    css:if-not-content="#content-core"
+    css:content-children="#content"
+    css:theme-children="div.container-fluid div.span9" />
 
 
   <copy attributes="title href accesskey"
