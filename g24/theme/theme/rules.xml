@@ -99,6 +99,11 @@
     <drop css:theme="#g24-online-users" />
   </rules>
 
+  <replace
+    css:content-children="#portal-column-one"
+    css:theme-children="#g24-tagcloud" />
+  <!-- css:content-children="#portal-column-one dl.portletTagCloudPortlet dd.lastItem" -->
+
   <!-- debugtoolbar -->
   <!-- after css:theme-children="body"
          css:content="#debug-toolbar-trigger"/>
