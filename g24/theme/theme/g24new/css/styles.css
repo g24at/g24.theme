@@ -11,3 +11,9 @@ body { padding-top: 60px; padding-bottom: 40px; }
 #g24-searchbox form, #g24-searchbox input { margin:0; } 
 #g24-searchbox .searchButton { display:none; }
 #g24-searchbox .searchSection label { display:inline; }
+
+#g24-sidebar dl { margin:0; }
+#g24-sidebar dt { margin-left:9px; margin-bottom:0.5em; font-size:1.2em; }
+
+.portletFilterType dd a { font-size:1.1em; }
+.portletFilterType dd a:after { content:' |'; }
