@@ -13,8 +13,7 @@
   <!-- HEAD -->
   <copy attributes="*" theme="/html" content="/html"/>
 
-  <drop css:theme="link.dropme" />
-  <drop css:theme="script.dropme" />
+  <drop css:theme=".dropme" />
   <after theme-children="/html/head" css:content="html head link[type='text/css']" />
   <after theme-children="/html/body" content="/html/head/script" />
 
@@ -99,10 +98,30 @@
     <drop css:theme="#g24-online-users" />
   </rules>
 
-  <replace
-    css:content-children="#portal-column-one"
-    css:theme-children="#g24-tagcloud" />
-  <!-- css:content-children="#portal-column-one dl.portletTagCloudPortlet dd.lastItem" -->
+
+  <after css:theme-children="#g24-sidebar"
+         css:if-content="#portal-column-one div.portletWrapper">
+    <xsl:for-each css:select="#portal-column-one div.portletWrapper dl">
+      <div class="well sidebar-nav">
+        <xsl:copy-of select="."/>
+      </div>
+    </xsl:for-each>
+  </after>
+  <after css:theme-children="#g24-sidebar"
+         css:content="#portal-column-one .managePortletsLink" />
+  <after css:theme-children="#g24-sidebar"
+         css:content="#portletmanager-plone-leftcolumn"
+         css:if-content="" />
+
+  <rules css:if-content="#portletmanager-plone-rightcolumn">
+    <after css:theme-children="#g24-sidebar">
+      <h4>Weitere Portlets aus anderen Bereichen der jeweiligen Seite</h4>
+    </after>
+    <after css:theme-children="#g24-sidebar"
+           css:content="#portletmanager-plone-rightcolumn div.managedPortlet"
+           css:if-content="" />
+  </rules>
+
 
   <!-- debugtoolbar -->
   <!-- after css:theme-children="body"
