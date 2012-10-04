@@ -6,7 +6,7 @@
             <element key="g24_skin_theme">
                 <element>jquery</element>
                 <element>jquerytools</element>
-                <element>xmpp</element>
+                <!--element>xmpp</element-->
                 <element>g24</element>
                 <element>g24only</element>
             </element>
