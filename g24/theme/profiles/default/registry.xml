@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <registry>
-    <record interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings"
-            field="resourceBundlesForThemes">
-        <value purge="false">
-            <element key="g24_skin_theme">
-                <element>jquery</element>
-                <element>jquerytools</element>
-                <!--element>xmpp</element-->
-                <element>g24</element>
-                <element>g24only</element>
-            </element>
-        </value>
-    </record>
+
+  <record name="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings.resourceBundlesForThemes" interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings" field="resourceBundlesForThemes">
+    <value purge="false">
+      <element key="g24_skin_theme">
+        <element>jquery</element>
+        <element>jquerytools</element>
+        <element>xmpp</element>
+        <element>g24</element>
+        <element>g24only</element>
+      </element>
+    </value>
+  </record>
 
 </registry>
