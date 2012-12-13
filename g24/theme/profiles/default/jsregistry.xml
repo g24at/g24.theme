@@ -6,7 +6,6 @@
   <javascript bundle="g24" id="livesearch.js" />
   <javascript bundle="g24" id="jquery.highlightsearchterms.js" />
 
-  <!-- Using bundle concept instead of: expression="request/HTTP_X_THEME_ENABLED|nothing" -->
   <javascript
       bundle="g24only"
       id="++theme++g24new-theme/g24new/js/scripts.js"
@@ -15,62 +14,7 @@
 
   <javascript
       bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-transition.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-alert.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-modal.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-dropdown.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-scrollspy.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-tab.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-tooltip.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-popover.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-button.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-collapse.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-carousel.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap-typeahead.js"
+      id="++theme++g24new-theme/bootstrap/docs/assets/js/bootstrap.js"
       cacheable="True" compression="safe" cookable="True" inline="False"
       enabled="True" expression="" />
 
