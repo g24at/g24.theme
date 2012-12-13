@@ -102,7 +102,7 @@
 
   <after css:theme-children="#g24-sidebar"
          css:if-content="#portal-column-one div.portletWrapper">
-    <xsl:for-each css:select="#portal-column-one div.portletWrapper dl">
+    <xsl:for-each css:select="#portal-column-one div.portletWrapper">
       <div class="well sidebar-nav">
         <xsl:copy-of select="."/>
       </div>

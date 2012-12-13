@@ -5,6 +5,9 @@
   <javascript bundle="g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.js" />
   <javascript bundle="g24" id="livesearch.js" />
   <javascript bundle="g24" id="jquery.highlightsearchterms.js" />
+  <javascript bundle="g24" id="++resource++plone.app.event.portlet_calendar.js" />
+
+
 
   <javascript
       bundle="g24only"
