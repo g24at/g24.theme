@@ -22,7 +22,7 @@
   />
   <replace
       content="/html/head/script"
-      theme="/html/body/script" 
+      theme="/html/body/script"
       method="raw"
   />
 
