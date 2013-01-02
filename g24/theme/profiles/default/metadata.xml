@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.theming:default</dependency>
     <dependency>profile-plone.resource:default</dependency>
+    <dependency>profile-plonetheme.sunburst:default</dependency>
   </dependencies>
 </metadata>

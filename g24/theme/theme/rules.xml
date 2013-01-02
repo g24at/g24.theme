@@ -121,12 +121,11 @@
            css:if-content="" />
   </rules>
 
-
   <!-- debugtoolbar -->
-  <!-- after css:theme-children="body"
-         css:content="#debug-toolbar-trigger"/>
-  <after css:theme-children="body"
-         css:content="#debug-toolbar"/-->
+  <after css:content="#debug-toolbar-trigger"
+         css:theme-children="body" />
+  <after css:content="#debug-toolbar"
+         css:theme-children="body" />
 
 </rules>
 </rules>

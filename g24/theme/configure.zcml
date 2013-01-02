@@ -9,6 +9,7 @@
   <include package="plone.app.theming" />
   <include package="plone.resource" file="meta.zcml"/>
   <include package="z3c.jbot" file="meta.zcml" />
+  <include package="plonetheme.sunburst"/>
 
   <!-- TODO: does not work. -->
   <!-- subscriber
