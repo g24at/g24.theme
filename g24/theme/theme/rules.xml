@@ -15,10 +15,16 @@
   <copy attributes="*" theme="/html" content="/html"/>
 
   <drop css:theme=".dropme" />
-  <after theme-children="/html/head" css:content="html head link[type='text/css']" />
-  <after theme-children="/html/body" content="/html/head/script" />
-
-  <!--replace theme="/html/head" content="/html/head"/-->
+  <drop content="/html/head/script"/>
+  <replace
+      content="/html/head"
+      theme="/html/head"
+  />
+  <replace
+      content="/html/head/script"
+      theme="/html/body/script" 
+      method="raw"
+  />
 
   <!-- replace content="/html/head/meta[@name='viewport']">
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"/>
@@ -37,16 +43,8 @@
 
   <!-- BODY -->
   <copy attributes="class dir" theme="/html/body" content="/html/body" />
-  <!--replace theme-children="/html/body" content-children="/html/body"/-->
-  <replace
-    css:if-content="#content-core"
-    css:content-children="#content-core"
-    css:theme-children="div.container-fluid div.span9" />
-  <replace
-    css:if-not-content="#content-core"
-    css:content-children="#content"
-    css:theme-children="div.container-fluid div.span9" />
-
+  <replace css:content-children="#portal-column-content"
+           css:theme-children="#g24_content" />
 
   <copy attributes="title href accesskey"
     css:content="#portal-logo"
