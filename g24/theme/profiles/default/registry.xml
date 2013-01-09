@@ -9,7 +9,6 @@
         <element>xmpp</element>
         <element>g24</element>
         <element>g24only</element>
-        <element>default</element>
       </element>
     </value>
   </record>
