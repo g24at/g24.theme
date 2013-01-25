@@ -57,6 +57,10 @@
     css:content="#portal-searchbox"
     css:theme-children="#g24-searchbox" />
 
+  <before
+    css:content="#g24_filter_box"
+    css:theme="#g24-menu" />
+
   <replace
     css:content-children="ul#portal-globalnav"
     css:theme-children="#g24-menu ul.nav" />
