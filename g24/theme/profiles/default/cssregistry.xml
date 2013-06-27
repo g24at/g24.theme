@@ -18,7 +18,7 @@
   <stylesheet bundle="sunburst" id="print.css" expression=""/>
   <stylesheet bundle="sunburst" id="mobile.css" expression=""/>
 
-  <stylesheet bundle="g24" id="++resource++plone.app.event/event.css" />
+  <!--stylesheet bundle="g24" id="++resource++plone.app.event/event.css" /-->
   <stylesheet bundle="g24" id="++resource++plone.app.debugtoolbar/debugtoolbar.css" />
 
   <stylesheet
