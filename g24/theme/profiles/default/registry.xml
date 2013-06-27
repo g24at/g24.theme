@@ -9,6 +9,13 @@
         <element>xmpp</element>
         <element>g24</element>
         <element>g24only</element>
+        <element>widgets</element>
+        <element>leaflet.markercluster</element>
+        <element>leaflet.fullscreen</element>
+        <element>leaflet.geosearch</element>
+        <element>leaflet.geosearch.google</element>
+        <element>leaflet.providers</element>
+        <element>leaflet.locatecontrol</element>
       </element>
     </value>
   </record>
