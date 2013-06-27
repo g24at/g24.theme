@@ -15,6 +15,7 @@
   <copy attributes="*" theme="/html" content="/html"/>
 
   <drop css:theme=".dropme" />
+  <!-- TODO: move down again, after p.formwidget.* have their inline scripts fixed -->
   <!--drop content="/html/head/script"/-->
   <replace
       content="/html/head"
