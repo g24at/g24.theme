@@ -41,11 +41,15 @@
     <link rel="apple-touch-icon-precomposed" href="++theme++g24new-theme/g24new/icons/apple-touch-icon-precomposed.png"/>
   </replace-->
 
+  <!-- TOOLBAR -->
+  <before
+      theme-children="/html/body"
+      content="//div[@data-iframe='plone-toolbar']" />
 
   <!-- BODY -->
   <copy attributes="class dir" theme="/html/body" content="/html/body" />
   <replace css:content-children="#portal-column-content"
-           css:theme-children="#g24_content" />
+           css:theme-children="#portal-column-content" />
 
   <copy attributes="title href accesskey"
     css:content="#portal-logo"

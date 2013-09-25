@@ -16,6 +16,7 @@
         <element>leaflet.geosearch.google</element>
         <element>leaflet.providers</element>
         <element>leaflet.locatecontrol</element>
+        <element>toolbar_init</element>
       </element>
     </value>
   </record>
