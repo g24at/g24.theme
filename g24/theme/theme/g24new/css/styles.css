@@ -19,3 +19,8 @@ body { padding-top: 60px; padding-bottom: 40px; }
 .portletFilterType dd a:after { content:' |'; }
 
 #g24_filter_box { float:left; }
+
+
+@media (max-width: 767px) {
+
+}
