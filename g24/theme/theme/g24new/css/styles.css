@@ -28,3 +28,33 @@ body { padding-top: 60px; padding-bottom: 40px; }
 @media (max-width: 767px) {
 
 }
+
+
+/* SHARINGBOX STYLES */
+fieldset#event select { width: auto; }
+.sharingbox fieldset { float: left; margin-right: 1em; }
+.sharingbox fieldset#features { float: none; }
+.sharingbox .actions { clear: left;}
+.sharingbox .geolocation input { display: block; }
+.modal-footer { display: none; }
+.modal-header { display: none; }
+.modal-body { max-height: 1600px !important; }
+.sharingbox .geolocation input { display: block; }
+
+.sharingbox #event { width: 30%; }
+.sharingbox #place { width: 20%; }
+
+.sharingbox #place div.field input {
+    width: 100%;
+}
+.sharingbox #place div.field:nth-child(3) {
+    float:left;
+    width: 20%;
+}
+.sharingbox #place div.field:nth-child(4) {
+    float:left;
+    width: 60%;
+}
+.sharingbox #place div.field:nth-child(5) {
+    clear:left;
+}
