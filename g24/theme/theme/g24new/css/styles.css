@@ -44,9 +44,6 @@ fieldset#event select { width: auto; }
 .sharingbox #event { width: 30%; }
 .sharingbox #place { width: 20%; }
 
-.sharingbox #place div.field input {
-    width: 100%;
-}
 .sharingbox #place div.field:nth-child(3) {
     float:left;
     width: 20%;
@@ -57,4 +54,12 @@ fieldset#event select { width: auto; }
 }
 .sharingbox #place div.field:nth-child(5) {
     clear:left;
+}
+
+.sharingbox div.field {
+    max-width: 100%; height: auto; min-width: 6em;
+}
+.sharingbox div.field input,
+.sharingbox div.field .pat-select2 {
+    width:100%;
 }
