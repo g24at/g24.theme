@@ -19,4 +19,10 @@
       cacheable="True" compression="safe" cookable="True" inline="False"
       enabled="True" expression="" />
 
+  <javascript
+      bundle="g24only"
+      id="++theme++g24new-theme/g24new/js/masonry.pkgd.js"
+      cacheable="True" compression="safe" cookable="True" inline="False"
+      enabled="True" expression="" />
+
 </object>
