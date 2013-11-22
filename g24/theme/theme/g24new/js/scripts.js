@@ -17,5 +17,11 @@ $(document).ready(function() {
         msnry.layout();
     });
 
+    $('.close_element').on('click', function() {
+        var article = $(this).closest('article');
+        article.remove();
+        msnry.layout();
+    });
+
 });
 }(jQuery));
