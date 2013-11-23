@@ -7,11 +7,6 @@
   <javascript bundle="g24" id="jquery.highlightsearchterms.js" />
   <!--javascript bundle="g24" id="++resource++plone.app.event.portlet_calendar.js" /-->
 
-  <javascript
-      bundle="g24only"
-      id="++theme++g24new-theme/g24new/js/scripts.js"
-      cacheable="True" compression="safe" cookable="True" inline="False"
-      enabled="True" expression="" />
 
   <javascript
       bundle="g24only"
@@ -21,7 +16,20 @@
 
   <javascript
       bundle="g24only"
-      id="++theme++g24new-theme/g24new/js/masonry.pkgd.js"
+      id="++theme++g24new-theme/g24new/js/isotope/jquery.isotope.js"
+      cacheable="True" compression="safe" cookable="True" inline="False"
+      enabled="True" expression="" />
+
+  <javascript
+      bundle="g24only"
+      id="++theme++g24new-theme/g24new/js/infinite-scroll/jquery.infinitescroll.js"
+      cacheable="True" compression="safe" cookable="True" inline="False"
+      enabled="True" expression="" />
+
+  <javascript
+      bundle="g24only"
+      id="++theme++g24new-theme/g24new/js/scripts.js"
+      insert-after="*"
       cacheable="True" compression="safe" cookable="True" inline="False"
       enabled="True" expression="" />
 
