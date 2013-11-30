@@ -33,6 +33,7 @@ body { padding-top: 60px; padding-bottom: 40px; }
 /* LAYOUT */
 #g24-sidebar { width: 20%; }
 article.element { width: 32%; margin: 0 1% 1% 0; }
+article.element header { word-wrap: break-word; }
 article.element .body {
     min-height: 8em;
     width: 100%;
